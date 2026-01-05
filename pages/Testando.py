@@ -16,7 +16,7 @@ ARQUIVO_CAIXA = "resultadoJogoMegaSena.xlsx"
 CAIXA_URL = "https://servicebus2.caixa.gov.br/portaldeloterias/api/resultados/download?modalidade=Mega-Sena"
 COR_QUENTE = "#FF4B4B"
 COR_FRIO = "#007BFF"
-NOME_SISTEMA = "Mega Sena SIPP Advanced"
+NOME_SISTEMA = "Mega Sena"
 VERSAO = "SIPP v2.0.20260105"
 PROGRAMADOR = "PRINCE, K.B"
 LINK_PESSOAL = "https://klaytonprincems.github.io/site/" # Placeholder para o link original
