@@ -1,6 +1,7 @@
-# 🍀 Mega Sena SIPP Advanced (v2.0)
+# 🍀 Mega Sena SIPP Advanced 
 
-Este projeto é uma aplicação web interativa desenvolvida em **Streamlit** para a **Mineração de Dados** dos resultados oficiais da Mega Sena. Ele expande a análise estatística básica com algoritmos avançados de Machine Learning e Associação, seguindo a metodologia **CRISP-DM**.
+Este projeto é uma aplicação web interativa desenvolvida em **Streamlit** para a **Mineração de Dados** dos resultados oficiais da Mega Sena. Ele expande a análise estatística básica com algoritmos avançados de Machine Learning e Associação, seguindo a metodologia **SIPP** e **CRISP-DM**.
+
 
 ## 🚀 Configuração e Execução
 
@@ -23,23 +24,26 @@ pip install -r requirements.txt
 Com as dependências instaladas, execute o aplicativo Streamlit a partir do terminal:
 
 ```bash
-streamlit run app_mega_sena_v2.py
+streamlit run app.py
 ```
 
 O aplicativo será aberto automaticamente em seu navegador padrão.
 
+Em alguns casos a biblioteca Streamlit pode solicitar seu email via terminal para liberar o acesso
+
+
 ## ⚙️ Funcionalidades Avançadas (Novas Abas)
 
-A versão 2.0 introduz novas abas que elevam a análise para o nível de Mineração de Dados, conforme a literatura de **Silva, Peres e Boscarioli**.
+A versão introduz novas abas que elevam a análise para o nível de Mineração de Dados, conforme a literatura de **Silva, Peres e Boscarioli**.
 
-| Aba | Funcionalidade | Algoritmos Utilizados | Foco Metodológico |
-| :--- | :--- | :--- | :--- |
-| **🔗 Associação** | Descoberta de regras de co-ocorrência entre dezenas. Permite ajustar **Suporte** e **Confiança** mínimos. | **Apriori** e **FP-Growth** (`mlxtend`) | Regras de Associação (KDD) |
-| **🤖 Predição ML** | Tentativa de prever as dezenas com maior probabilidade de serem sorteadas no próximo concurso. | **Random Forest Classifier** (`scikit-learn`) | Classificação e Predição |
-| **🧩 Clustering** | Identificação de padrões ocultos nos sorteios. Permite agrupar concursos (padrões de sorteio) ou dezenas (afinidade). | **K-Means** (`scikit-learn`) | Agrupamento (Clustering) |
-| **🔍 Analisador** | Análise de jogos personalizados (4 a 15 dezenas), calculando Score SIPP, frequência histórica e ocorrências de premiação. | Estatística Descritiva e Score SIPP | Avaliação de Hipóteses |
-| **🎲 Gerador** | Geração de jogos baseada em predições do sistema e restrições definidas pelo usuário (pares, soma, etc.). | Heurística e Otimização | Implantação e Uso Prático |
-| **📖 CRISP-DM** | Documentação do projeto sob a ótica da metodologia **CRISP-DM** (Cross-Industry Standard Process for Data Mining). | N/A | Governança e Metodologia |
+| Aba                 | Funcionalidade | Algoritmos Utilizados | Foco Metodológico |
+|:--------------------| :--- | :--- | :--- |
+| **🔗 Associação**   | Descoberta de regras de co-ocorrência entre dezenas. Permite ajustar **Suporte** e **Confiança** mínimos. | **Apriori** e **FP-Growth** (`mlxtend`) | Regras de Associação (KDD) |
+| **🤖 Predição MLP** | Tentativa de prever as dezenas com maior probabilidade de serem sorteadas no próximo concurso. | **Random Forest Classifier** (`scikit-learn`) | Classificação e Predição |
+| **🧩 Clustering**   | Identificação de padrões ocultos nos sorteios. Permite agrupar concursos (padrões de sorteio) ou dezenas (afinidade). | **K-Means** (`scikit-learn`) | Agrupamento (Clustering) |
+| **🔍 Analisador**   | Análise de jogos personalizados (4 a 15 dezenas), calculando Score SIPP, frequência histórica e ocorrências de premiação. | Estatística Descritiva e Score SIPP | Avaliação de Hipóteses |
+| **🎲 Gerador**      | Geração de jogos baseada em predições do sistema e restrições definidas pelo usuário (pares, soma, etc.). | Heurística e Otimização | Implantação e Uso Prático |
+| **📖 CRISP-DM**     | Documentação do projeto sob a ótica da metodologia **CRISP-DM** (Cross-Industry Standard Process for Data Mining). | N/A | Governança e Metodologia |
 
 ### Detalhes da Aba "🔗 Associação"
 
