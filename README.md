@@ -22,10 +22,23 @@ pip install -r requirements.txt
 ### 3. Execução da Aplicação
 
 Com as dependências instaladas, execute o aplicativo Streamlit a partir do terminal:
-
 ```bash
 streamlit run app.py
 ```
+
+## 🐳 Como Usar via Docker
+
+A utilização via Docker garante que todas as bibliotecas de Data Science (Pandas, Scikit-Learn, Mlxtend) funcionem corretamente, independentemente do seu sistema operacional.
+
+### 1. Execução Rápida (Recomendado)
+Se você não deseja baixar o código-fonte e quer apenas rodar a aplicação, utilize a imagem oficial hospedada no Docker Hub:
+
+https://hub.docker.com/u/klaytonprince
+
+```bash
+docker run -p 8501:8501 klaytonprince/kbprince:latest
+```
+
 
 O aplicativo será aberto automaticamente em seu navegador padrão.
 
@@ -77,6 +90,6 @@ O projeto mantém o compromisso com a transparência e a ética:
 *   **Transparência Algorítmica:** Todos os algoritmos utilizados (SIPP, Apriori, FP-Growth, Random Forest, K-Means) são declarados e fazem parte da análise.
 
 ---
-*Desenvolvido por PRINCE, K>B
+* Desenvolvido por PRINCE, K.B
 
 
