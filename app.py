@@ -41,27 +41,29 @@ st.markdown("<p class='subtitle'>Selecione uma ferramenta abaixo para iniciar</p
 st.divider()
 
 # 4. Layout de Menu em Colunas
-col1, col2 = st.columns(2)
+col1, col2, col3 = st.columns(3)
 with col1:
-    st.subheader("✊ Jokenpô")
-    st.write("Desafie o computador no clássico Pedra, Papel e Tesoura.")
-    if st.button("  JOGAR JOKENPÔ  "):
-        st.switch_page("pages/Jogo_Jokenpo.py")
+    #st.subheader("🍀 Mega Sena")
+    if st.button("🍀   Mega Sena"):
+        st.switch_page("pages/Jogo_Mega_Sena_liberado.py")
 with col1:
-    st.subheader("🍀 Mega Sena")
-    st.write("Mineração e Analise de Dados.")
-    if st.button("Analise Mega Sena"):
+    #st.subheader("🍀 Mega Sena")
+    #st.write("Mineração e Analise de Dados.")
+    if st.button("⛏️ 🍀 Mega Sena"):
         st.switch_page("pages/Jogo_Mega_Sena.py")
+
+
+
 with col2:
-    st.subheader("Testando")
-    st.write("Testes.")
-    if st.button("    Testando    "):
+    #st.subheader("✊ Jokenpô")
+    #st.write("Desafie o computador no clássico Pedra, Papel e Tesoura.")
+    if st.button("✊ Jokenpô"):
+        st.switch_page("pages/Jogo_Jokenpo.py")
+
+
+with col3:
+    if st.button("💣 Testando"):
         st.switch_page("pages/Testando.py")
-with col2:
-    st.subheader("🍀 Extras")
-    st.write("Extras.")
-    if st.button("     Extras     "):
-        st.switch_page("pages/zzz_extras.py")
 st.divider()
 
 

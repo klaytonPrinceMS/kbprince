@@ -208,8 +208,15 @@ print(f'Gerando senha {gerar_hash("jose")}')
 
 
 # 1. Carregar arquivo YAML
-caminho_base = r"F:\Documents\klayton\Git_hub2026\kbprince"
-caminho_yaml = os.path.join(caminho_base, "usuarios.yaml")
+# Pega o diretório onde o script atual está localizado
+diretorio_atual = os.path.dirname(os.path.abspath(__file__))
+
+# Constrói o caminho relativo ao script
+# Se o yaml estiver na raiz do projeto, use apenas "usuarios.yaml"
+caminho_yaml = os.path.join(diretorio_atual, "..", "usuarios.yaml")
+
+# Se o arquivo estiver na mesma pasta do script, use:
+# caminho_yaml = os.path.join(diretorio_atual, "usuarios.yaml")
 
 with open(caminho_yaml) as file:
     config = yaml.load(file, Loader=SafeLoader)
@@ -223,7 +230,6 @@ authenticator = stauth.Authenticate(
 )
 
 # 3. Renderizar formulário de login
-# Nas versões novas, usamos o método login sem passar 'main' se quiser o padrão
 # login retorna apenas o status de autenticação diretamente
 authenticator.login()
 
@@ -828,5 +834,7 @@ elif st.session_state["authentication_status"] is False:
     st.error('Usuário ou senha incorretos')
 elif st.session_state["authentication_status"] is None:
     st.warning('Por favor, insira seu usuário e senha.')
+
+
 
 st.markdown(f'<div class="footer-text notranslate">© {NOME_SISTEMA} {VERSAO} | 2026 | By: {PROGRAMADOR}</div>', unsafe_allow_html=True)

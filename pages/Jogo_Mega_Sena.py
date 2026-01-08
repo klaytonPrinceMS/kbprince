@@ -231,8 +231,15 @@ def gerar_hash(senha_plana):
 print(f'Gerando senha {gerar_hash("jose")}')
 
 # 1. Carregar arquivo YAML
-caminho_base = r"F:\Documents\klayton\Git_hub2026\kbprince"
-caminho_yaml = os.path.join(caminho_base, "usuarios.yaml")
+# Pega o diretório onde o script atual está localizado
+diretorio_atual = os.path.dirname(os.path.abspath(__file__))
+
+# Constrói o caminho relativo ao script
+# Se o yaml estiver na raiz do projeto, use apenas "usuarios.yaml"
+caminho_yaml = os.path.join(diretorio_atual, "..", "usuarios.yaml")
+
+# Se o arquivo estiver na mesma pasta do script, use:
+# caminho_yaml = os.path.join(diretorio_atual, "usuarios.yaml")
 
 with open(caminho_yaml) as file:
     config = yaml.load(file, Loader=SafeLoader)
