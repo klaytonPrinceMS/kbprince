@@ -1,0 +1,14 @@
+credentials:
+  usernames:
+    klayton:
+      email: klayton.prince.ms@gmail.com
+      name: Klayton
+      password: $2b$12$yTnwTXHMhJhLac/M3Df1DeONfWNM.9IF5JBEg8AhyH1PPB5nA1JQ2
+    convidado:
+      email: convidado@email.com
+      name: Daniel
+      password: $2b$12$ee9SbNof.IPiXEmuP9awWu2L0TIsB.Xf6ai59Ob6B1K6iqI91GKtW
+cookie:
+  expiry_days: 0
+  key: assinatura_secreta_mega
+  name: mega_sena_cookie
