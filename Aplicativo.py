@@ -1,16 +1,18 @@
 import streamlit as st
 PROGRAMADOR = "PRINCE, K.B"
+ICONE_PAGINA = "📰"
 NOME_SISTEMA = "T! SOS Sistemas"
 VERSAO = "TSistemas v1.0.20250104"
 LINK_PESSOAL = "https://klaytonprincems.github.io/site/"
 COR_QUENTE = "#FF4B4B"
-
+COR_QUENTE = "#FF4B4B"
+COR_FRIO = "#007BFF"
 
 # 1. Configuração ÚNICA da Página
 st.set_page_config(
     page_title=NOME_SISTEMA,
-    page_icon="📱",
-    layout="centered",
+    page_icon=ICONE_PAGINA,
+    layout="wide",
     initial_sidebar_state='expanded',
     menu_items={"About": LINK_PESSOAL}
 )
@@ -23,7 +25,7 @@ st.markdown(f"""
     #header {{visibility: hidden;}} #esconde header
     #footer {{visibility: hidden;}} #esconde o footer
     
-    .main-title {{text-align: center; color: {COR_QUENTE}; font-weight: bold; margin-bottom: 20px;}}
+    .main-title {{text-align: center; color: {COR_QUENTE}; font-weight: bold; margin-bottom: 20px; font-size: 30px;}}
     .subtitle {{text-align: center; color: #666; margin-bottom: 20px;}}
     .stButton>button {{width: 100%; font-weight: bold; border-radius: 15px; border: 2px solid transparent; transition: all 0.3s ease;}}
     .stButton>button:hover {{border-color: #ff4b4b;color: #ff4b4b;transform: translateY(-5px);box-shadow: 0 4px 15px rgba(255, 75, 75, 0.2);}}
@@ -36,30 +38,28 @@ st.markdown(f"""
     """, unsafe_allow_html=True)
 
 # 3. Cabeçalho
-st.markdown("<h1 class='main-title'>T! SOS Sistemas</h1>", unsafe_allow_html=True)
+st.markdown(f"<h1 class='main-title'>{ICONE_PAGINA} {NOME_SISTEMA}</h1>", unsafe_allow_html=True)
 st.markdown("<p class='subtitle'>Selecione uma ferramenta abaixo para iniciar</p>", unsafe_allow_html=True)
 st.divider()
 
 # 4. Layout de Menu em Colunas
 col1, col2, col3 = st.columns(3)
 with col1:
-    #st.subheader("🍀 Mega Sena")
     if st.button("🍀   Mega Sena"):
         st.switch_page("pages/Jogo_Mega_Sena_liberado.py")
 with col1:
-    #st.subheader("🍀 Mega Sena")
-    #st.write("Mineração e Analise de Dados.")
     if st.button("⛏️ 🍀 Mega Sena"):
         st.switch_page("pages/Jogo_Mega_Sena.py")
 
 
 
 with col2:
-    #st.subheader("✊ Jokenpô")
-    #st.write("Desafie o computador no clássico Pedra, Papel e Tesoura.")
+    if st.button("📰 Noticias"):
+        st.switch_page("pages/Noticias.py")
+
+with col2:
     if st.button("✊ Jokenpô"):
         st.switch_page("pages/Jogo_Jokenpo.py")
-
 
 with col3:
     if st.button("💣 Testando"):

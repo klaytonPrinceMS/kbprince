@@ -23,7 +23,7 @@ pip install -r requirements.txt
 
 Com as dependências instaladas, execute o aplicativo Streamlit a partir do terminal:
 ```bash
-streamlit run app.py
+streamlit run Aplicativo.py
 ```
 
 ## 🐳 Como Usar via Docker

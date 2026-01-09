@@ -176,7 +176,7 @@ st.write("---")
 cn1, cn2 = st.columns(2)
 with cn1:
     if st.button("🏠 Menu Principal", use_container_width=True):
-        st.switch_page("app.py")
+        st.switch_page("Aplicativo.py")
 with cn2:
     if st.button("🔄 Zerar Placar", use_container_width=True):
         st.session_state.vitorias = 0
