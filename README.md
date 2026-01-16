@@ -32,11 +32,14 @@ e monitoramento de segurança cibernética (SOC).
 ![PyYAML](https://img.shields.io/badge/PyYAML-CB171E?style=for-the-badge&logo=yaml&logoColor=white)
 ![Random](https://img.shields.io/badge/Random-Library-000000?style=for-the-badge&logo=python&logoColor=white)
 ![Yahoo Finance](https://img.shields.io/badge/Yahoo_Finance-6001D2?style=for-the-badge&logo=yahoo&logoColor=white)
+
 ---
-**Autor:** PRINCE, K.B  
-**Email:** klayton.prince.ms@gmail.com  
-**GitHub:** [@klaytonPrinceMS](https://github.com/klaytonPrinceMS)<br>
-**Acesse a** [Documentação completa](https://klaytonPrinceMS.github.io/kbprince)
+
+👉 **Autor:** PRINCE, K.B  
+👉 **Email:** klayton.prince.ms@gmail.com  
+👉 **GitHub:** [@klaytonPrinceMS](https://github.com/klaytonPrinceMS)<br>
+👉 **Acesse a** [Documentação completa](https://klaytonPrinceMS.github.io/kbprince)
+
 ---
 
 # 🛡️ Ecossistema KBPrince
