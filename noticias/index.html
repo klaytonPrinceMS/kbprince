@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="author" content="PRINCE, K.B">
+        <link rel="canonical" href="https://klaytonprincems.github.io/site/noticias/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Agregador - 🛡️ Ecossistema KBPrince</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">🛡️ Ecossistema KBPrince</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">🏠 Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../configuracao_execucao/" class="nav-link">Instalação</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Jogos</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../mega_sena/" class="dropdown-item">🍀 Mega SIPP Advanced</a>
+</li>
+                                    
+<li>
+    <a href="../jokenpo/" class="dropdown-item">✊ Jokenpô</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Noticas</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active" aria-current="page">Agregador</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">SOC</a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../soc/" class="dropdown-item">Monitoramento</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../jokenpo/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../soc/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#monitor-de-noticias-threat-intelligence" class="nav-link">📡 Monitor de Notícias (Threat Intelligence)</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#visao-geral" class="nav-link">📖 Visão Geral</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#stack-tecnologica-do-modulo" class="nav-link">🛠️ Stack Tecnológica do Módulo</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#funcionalidades-principais" class="nav-link">⚙️ Funcionalidades Principais</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#estrutura-do-codigo" class="nav-link">🧬 Estrutura do Código</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#seguranca-e-integridade" class="nav-link">🛡️ Segurança e Integridade</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#como-usar" class="nav-link">📝 Como Usar</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="monitor-de-noticias-threat-intelligence">📡 Monitor de Notícias (Threat Intelligence)</h1>
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Operacional-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Módulo-Inteligência-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Versão-1.0.20260109-blue?style=for-the-badge" />
+</p>
+
+<h2 id="visao-geral">📖 Visão Geral</h2>
+<p>O módulo <code>Noticias</code> atua como um agregador de inteligência em tempo real, focado em monitorar fontes globais e nacionais de <strong>Cybersegurança</strong>, <strong>Ataques Hackers</strong> e <strong>Tecnologia</strong>. Ele utiliza técnicas de <em>Web Scraping</em> e processamento de feeds RSS para manter o operador informado sobre as ameaças mais recentes do cenário digital.</p>
+<h2 id="stack-tecnologica-do-modulo">🛠️ Stack Tecnológica do Módulo</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tecnologia</th>
+<th style="text-align: left;">Finalidade</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><img alt="Requests" src="https://img.shields.io/badge/Requests-005571?style=flat-square&amp;logo=python&amp;logoColor=white" /></td>
+<td style="text-align: left;">Requisições HTTP aos servidores de notícias.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><img alt="Parsel" src="https://img.shields.io/badge/Parsel-Scrapy-orange?style=flat-square&amp;logo=scrapy&amp;logoColor=white" /></td>
+<td style="text-align: left;">Extração de dados (Parsing) de arquivos XML/RSS.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><img alt="Base64" src="https://img.shields.io/badge/Base64-Encoding-black?style=flat-square" /></td>
+<td style="text-align: left;">Decodificação de URLs rastreadas pelo Google News.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&amp;logo=Streamlit&amp;logoColor=white" /></td>
+<td style="text-align: left;">Interface de visualização em tempo real.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="funcionalidades-principais">⚙️ Funcionalidades Principais</h2>
+<h3 id="1-agregacao-multi-foco">1. Agregação Multi-Foco</h3>
+<p>O sistema permite monitorar diferentes vetores através de seletores pré-configurados ou busca global:
+* <strong>Cybersegurança (Brasil):</strong> Foco em ataques hackers nacionais.
+* <strong>Ataques Governamentais:</strong> Monitoramento específico de invasões a órgãos públicos.
+* <strong>Tecnologia e Negócios:</strong> Tendências globais do setor.</p>
+<h3 id="2-algoritmo-de-decodificacao-de-url">2. Algoritmo de Decodificação de URL</h3>
+<p>O módulo implementa uma função avançada de decodificação (<code>decodificar_url_google</code>) que:
+1.  Isola a parte codificada em <strong>Base64</strong> das URLs.
+2.  Trata o <em>padding</em> dos bytes para evitar erros de decodificação.
+3.  Utiliza <strong>Regex (Expressões Regulares)</strong> para extrair o link original da notícia, garantindo que o usuário acesse o portal de destino sem intermediários.</p>
+<h3 id="3-otimizacao-e-performance">3. Otimização e Performance</h3>
+<ul>
+<li><strong>LRU Cache:</strong> Utiliza <code>@functools.lru_cache</code> para armazenar URLs já decodificadas, reduzindo o processamento repetitivo.</li>
+<li><strong>Tratamento de Datas:</strong> Converte o padrão RFC 822 (servidor) para o padrão brasileiro (<code>dd/mm/aaaa hh:mm</code>).</li>
+<li><strong>Timeout Seguro:</strong> Implementa limites de tempo (12s) nas requisições para evitar travamentos da interface caso o provedor esteja instável.</li>
+</ul>
+<hr />
+<h2 id="estrutura-do-codigo">🧬 Estrutura do Código</h2>
+<h3 id="funcoes-essenciais">Funções Essenciais</h3>
+<h4 id="buscar_noticiasurl_rss"><code>buscar_noticias(url_rss)</code></h4>
+<p>Realiza o scraping do feed RSS.
+* <strong>Entrada:</strong> URL do feed RSS.
+* <strong>Saída:</strong> Lista de dicionários contendo <code>titulo</code>, <code>link</code>, <code>data</code> e <code>fonte</code>.</p>
+<h4 id="formatar_datadata_str"><code>formatar_data(data_str)</code></h4>
+<p>Normaliza a data de publicação para o fuso horário e formato local.</p>
+<hr />
+<h2 id="seguranca-e-integridade">🛡️ Segurança e Integridade</h2>
+<p>Assim como os demais módulos deste ecossistema, o monitoramento de notícias é validado e sincronizado com o protocolo interno, garantindo que as fontes consumidas passem pelos filtros de integridade do sistema central antes de serem exibidas no Dashboard.</p>
+<h2 id="como-usar">📝 Como Usar</h2>
+<ol>
+<li>Acesse o menu lateral do <strong>Portal SIPP &amp; SOC</strong>.</li>
+<li>Selecione "Notícias" ou o ícone 📰.</li>
+<li>Escolha uma categoria pré-definida ou digite um termo de busca no campo <strong>"Pesquisa Global"</strong>.</li>
+<li>Clique no título de qualquer notícia para ser redirecionado via link direto decodificado.</li>
+</ol>
+<hr />
+<div style="text-align: center;">
+  <b>Desenvolvedor:</b> PRINCE, K.B <br>
+  © 2026 | T! SOS Sistemas
+</div></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+                <p>© T! SOS Sistemas 2026</p>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
