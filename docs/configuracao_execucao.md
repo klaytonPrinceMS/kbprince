@@ -43,3 +43,8 @@ O aplicativo será aberto automaticamente em seu navegador padrão.
 Em alguns casos a biblioteca Streamlit pode solicitar seu email via terminal para liberar o acesso
 
 
+---
+<div style="text-align: center;">
+  <b>Desenvolvedor:</b> PRINCE, K.B <br>
+  © 2026 | T! SOS Sistemas
+</div>
