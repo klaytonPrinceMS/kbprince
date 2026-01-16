@@ -118,6 +118,7 @@ with col1:
     if st.button("🍀 Mega Sena", key="mega1"):
         st.switch_page("pages/Jogo_Mega_Sena_liberado.py")
 
+
     if st.button("⛏️ Mega Sena", key="mega2"):
         st.switch_page("pages/Jogo_Mega_Sena.py")
 

@@ -1,0 +1,18 @@
+site_name: 🛡️ Ecossistema KBPrince
+site_url: https://klaytonprincems.github.io/site/
+site_author: PRINCE, K.B
+site_description: Suíte modular de análise preditiva, monitoramento de incidentes e produtividade, entreterimento, finanças.
+copyright: © T! SOS Sistemas 2026
+
+
+nav:
+  - 🏠 Home: index.md  # Este deve ser o docs/index.md com seus badges
+  - Instalação: configuracao_execucao.md
+  - Jogos:
+      - 🍀 Mega SIPP Advanced: mega_sena.md
+      - ✊ Jokenpô : jokenpo.md
+  - Noticas:
+      - Agregador: noticias.md
+  - SOC:
+      - Monitoramento: soc.md
+
