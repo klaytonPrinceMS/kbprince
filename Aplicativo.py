@@ -137,6 +137,10 @@ with col4:
     if st.button("✊ Jokenpô", key="jokenpo"):
         st.switch_page("pages/Jogo_Jokenpo.py")
 
+    if st.button("✊ Hanói", key="hanoi"):
+        st.switch_page("pages/Hanoi.py")
+
+
     if st.button("💣 Testando", key="test"):
         st.switch_page("pages/Testando.py")
 
