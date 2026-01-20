@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <meta name="author" content="PRINCE, K.B">
-        <link rel="canonical" href="https://klaytonprincems.github.io/site/noticias/">
+        <link rel="canonical" href="https://klaytonprincems.github.io/site/hanoi/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Agregador - 🛡️ Ecossistema KBPrince</title>
+        <title>🏰 Hanói - 🛡️ Ecossistema KBPrince</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/fontawesome.min.css" rel="stylesheet">
         <link href="../css/brands.min.css" rel="stylesheet">
@@ -41,7 +41,7 @@
                                 <a href="../configuracao_execucao/" class="nav-link">Instalação</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Jogos</a>
+                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Jogos</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
@@ -53,16 +53,16 @@
 </li>
                                     
 <li>
-    <a href="../hanoi/" class="dropdown-item">🏰 Hanói</a>
+    <a href="./" class="dropdown-item active" aria-current="page">🏰 Hanói</a>
 </li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle active" aria-current="page" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Noticas</a>
+                                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Noticas</a>
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="./" class="dropdown-item active" aria-current="page">Agregador</a>
+    <a href="../noticias/" class="dropdown-item">Agregador</a>
 </li>
                                 </ul>
                             </li>
@@ -93,12 +93,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../hanoi/" class="nav-link">
+                                <a rel="prev" href="../jokenpo/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../soc/" class="nav-link">
+                                <a rel="next" href="../noticias/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -120,29 +120,33 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#monitor-de-noticias-threat-intelligence" class="nav-link">📡 Monitor de Notícias (Threat Intelligence)</a>
+            <li class="nav-item" data-bs-level="1"><a href="#torre-de-hanoi-master" class="nav-link">🏰 Torre de Hanoi Master</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#visao-geral" class="nav-link">📖 Visão Geral</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#stack-tecnologica-do-modulo" class="nav-link">🛠️ Stack Tecnológica do Módulo</a>
+            <li class="nav-item" data-bs-level="2"><a href="#sumario" class="nav-link">📋 Sumário</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#funcionalidades-principais" class="nav-link">⚙️ Funcionalidades Principais</a>
+            <li class="nav-item" data-bs-level="2"><a href="#estilizacao-e-estabilidade" class="nav-link">Estilização e Estabilidade</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#estrutura-do-codigo" class="nav-link">🧬 Estrutura do Código</a>
+            <li class="nav-item" data-bs-level="2"><a href="#visao-geral" class="nav-link">📌 Visão Geral</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#seguranca-e-integridade" class="nav-link">🛡️ Segurança e Integridade</a>
+            <li class="nav-item" data-bs-level="2"><a href="#arquitetura-de-estado" class="nav-link">⚙️ Arquitetura de Estado</a>
               <ul class="nav flex-column">
               </ul>
             </li>
-            <li class="nav-item" data-bs-level="2"><a href="#como-usar" class="nav-link">📝 Como Usar</a>
+            <li class="nav-item" data-bs-level="2"><a href="#componentes-de-interface" class="nav-link">🖥️ Componentes de Interface</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#logica-de-jogo" class="nav-link">🧠 Lógica de Jogo</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#estilizacao-e-estabilidade_1" class="nav-link">🎨 Estilização e Estabilidade</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -153,84 +157,68 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="monitor-de-noticias-threat-intelligence">📡 Monitor de Notícias (Threat Intelligence)</h1>
-<p align="center">
-  <img src="https://img.shields.io/badge/Status-Operacional-brightgreen?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Módulo-Inteligência-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Versão-1.0.20260109-blue?style=for-the-badge" />
-</p>
-
-<h2 id="visao-geral">📖 Visão Geral</h2>
-<p>O módulo <code>Noticias</code> atua como um agregador de inteligência em tempo real, focado em monitorar fontes globais e nacionais de <strong>Cybersegurança</strong>, <strong>Ataques Hackers</strong> e <strong>Tecnologia</strong>. Ele utiliza técnicas de <em>Web Scraping</em> e processamento de feeds RSS para manter o operador informado sobre as ameaças mais recentes do cenário digital.</p>
-<h2 id="stack-tecnologica-do-modulo">🛠️ Stack Tecnológica do Módulo</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Tecnologia</th>
-<th style="text-align: left;">Finalidade</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><img alt="Requests" src="https://img.shields.io/badge/Requests-005571?style=flat-square&amp;logo=python&amp;logoColor=white" /></td>
-<td style="text-align: left;">Requisições HTTP aos servidores de notícias.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><img alt="Parsel" src="https://img.shields.io/badge/Parsel-Scrapy-orange?style=flat-square&amp;logo=scrapy&amp;logoColor=white" /></td>
-<td style="text-align: left;">Extração de dados (Parsing) de arquivos XML/RSS.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><img alt="Base64" src="https://img.shields.io/badge/Base64-Encoding-black?style=flat-square" /></td>
-<td style="text-align: left;">Decodificação de URLs rastreadas pelo Google News.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&amp;logo=Streamlit&amp;logoColor=white" /></td>
-<td style="text-align: left;">Interface de visualização em tempo real.</td>
-</tr>
-</tbody>
-</table>
+<h1 id="torre-de-hanoi-master">🏰 Torre de Hanoi Master</h1>
+<p>Este documento descreve o funcionamento, a estrutura e as decisões de design do projeto <strong>Torre de Hanoi</strong>, desenvolvido em Python com o framework <strong>Streamlit</strong>.</p>
 <hr />
-<h2 id="funcionalidades-principais">⚙️ Funcionalidades Principais</h2>
-<h3 id="1-agregacao-multi-foco">1. Agregação Multi-Foco</h3>
-<p>O sistema permite monitorar diferentes vetores através de seletores pré-configurados ou busca global:
-* <strong>Cybersegurança (Brasil):</strong> Foco em ataques hackers nacionais.
-* <strong>Ataques Governamentais:</strong> Monitoramento específico de invasões a órgãos públicos.
-* <strong>Tecnologia e Negócios:</strong> Tendências globais do setor.</p>
-<h3 id="2-algoritmo-de-decodificacao-de-url">2. Algoritmo de Decodificação de URL</h3>
-<p>O módulo implementa uma função avançada de decodificação (<code>decodificar_url_google</code>) que:
-1.  Isola a parte codificada em <strong>Base64</strong> das URLs.
-2.  Trata o <em>padding</em> dos bytes para evitar erros de decodificação.
-3.  Utiliza <strong>Regex (Expressões Regulares)</strong> para extrair o link original da notícia, garantindo que o usuário acesse o portal de destino sem intermediários.</p>
-<h3 id="3-otimizacao-e-performance">3. Otimização e Performance</h3>
+<h2 id="sumario">📋 Sumário</h2>
+<ol>
+<li><a href="#-visão-geral">Visão Geral</a></li>
+<li><a href="#-arquitetura-de-estado">Arquitetura de Estado</a></li>
+<li><a href="#-componentes-de-interface">Componentes de Interface</a></li>
+<li><a href="#-lógica-de-jogo">Lógica de Jogo</a></li>
+<li>
+<h2 id="estilizacao-e-estabilidade"><a href="#-estilização-e-estabilidade">Estilização e Estabilidade</a></h2>
+</li>
+</ol>
+<h2 id="visao-geral">📌 Visão Geral</h2>
+<p>O <strong>Torre de Hanoi</strong> é uma implementação digital do quebra-cabeça matemático "Torre de Hanói". O sistema permite escolher dificuldades entre <strong>3 e 20 discos</strong> e gerencia recordes persistentes durante a sessão do usuário.</p>
+<h3 id="regras-implementadas">Regras Implementadas:</h3>
 <ul>
-<li><strong>LRU Cache:</strong> Utiliza <code>@functools.lru_cache</code> para armazenar URLs já decodificadas, reduzindo o processamento repetitivo.</li>
-<li><strong>Tratamento de Datas:</strong> Converte o padrão RFC 822 (servidor) para o padrão brasileiro (<code>dd/mm/aaaa hh:mm</code>).</li>
-<li><strong>Timeout Seguro:</strong> Implementa limites de tempo (12s) nas requisições para evitar travamentos da interface caso o provedor esteja instável.</li>
+<li>Apenas o disco do topo pode ser movido.</li>
+<li>Um disco maior nunca pode ser sobreposto a um disco menor.</li>
+<li>A vitória é contabilizada apenas quando todos os discos chegam à <strong>Torre C</strong>.</li>
 </ul>
 <hr />
-<h2 id="estrutura-do-codigo">🧬 Estrutura do Código</h2>
-<h3 id="funcoes-essenciais">Funções Essenciais</h3>
-<h4 id="buscar_noticiasurl_rss"><code>buscar_noticias(url_rss)</code></h4>
-<p>Realiza o scraping do feed RSS.
-* <strong>Entrada:</strong> URL do feed RSS.
-* <strong>Saída:</strong> Lista de dicionários contendo <code>titulo</code>, <code>link</code>, <code>data</code> e <code>fonte</code>.</p>
-<h4 id="formatar_datadata_str"><code>formatar_data(data_str)</code></h4>
-<p>Normaliza a data de publicação para o fuso horário e formato local.</p>
+<h2 id="arquitetura-de-estado">⚙️ Arquitetura de Estado</h2>
+<p>O jogo utiliza o <code>st.session_state</code> para garantir que os dados não sejam perdidos entre os reruns do Streamlit:</p>
+<ul>
+<li><strong><code>tabuleiros</code></strong>: Dicionário <code>{ 'A': [], 'B': [], 'C': [] }</code> representando as pilhas.</li>
+<li><strong><code>recordes</code></strong>: Armazena o melhor resultado de cada nível (<code>{ n_discos: min_movimentos }</code>).</li>
+<li><strong><code>selecionado</code></strong>: Variável de controle para o fluxo "Pegar/Soltar".</li>
+<li><strong><code>movimentos</code></strong>: Contador incremental de jogadas válidas.</li>
+</ul>
 <hr />
-<h2 id="seguranca-e-integridade">🛡️ Segurança e Integridade</h2>
-<p>Assim como os demais módulos deste ecossistema, o monitoramento de notícias é validado e sincronizado com o protocolo interno, garantindo que as fontes consumidas passem pelos filtros de integridade do sistema central antes de serem exibidas no Dashboard.</p>
-<h2 id="como-usar">📝 Como Usar</h2>
-<ol>
-<li>Acesse o menu lateral do <strong>Portal SIPP &amp; SOC</strong>.</li>
-<li>Selecione "Notícias" ou o ícone 📰.</li>
-<li>Escolha uma categoria pré-definida ou digite um termo de busca no campo <strong>"Pesquisa Global"</strong>.</li>
-<li>Clique no título de qualquer notícia para ser redirecionado via link direto decodificado.</li>
-</ol>
+<h2 id="componentes-de-interface">🖥️ Componentes de Interface</h2>
+<h3 id="1-barra-lateral-sidebar">1. Barra Lateral (Sidebar)</h3>
+<ul>
+<li><strong>Slider de Dificuldade</strong>: Define o <code>n</code> de discos (3 a 20).</li>
+<li><strong>Métrica de Recorde</strong>: Exibe o <code>Best Score</code> dinamicamente conforme a dificuldade selecionada.</li>
+<li><strong>Botão Reiniciar</strong>: Reseta o estado da sessão para o padrão inicial.</li>
+</ul>
+<h3 id="2-area-de-jogo">2. Área de Jogo</h3>
+<ul>
+<li><strong>Colunas (<code>st.columns</code>)</strong>: Três divisões verticais para as torres A, B e C.</li>
+<li><strong>Containers de Borda</strong>: Espaço visual delimitado onde os discos são renderizados.</li>
+<li><strong>Botões Dinâmicos</strong>: Alternam entre "PEGAR" e "SOLTAR" dependendo do estado de seleção.</li>
+</ul>
 <hr />
-<div style="text-align: center;">
-  <b>Desenvolvedor:</b> PRINCE, K.B <br>
-  © 2026 | T! SOS Sistemas
-</div></div>
+<h2 id="logica-de-jogo">🧠 Lógica de Jogo</h2>
+<h3 id="movimentacao">Movimentação</h3>
+<p>A função <code>mover_disco(origem, destino)</code> valida a jogada antes de alterar as listas. Se o movimento for ilegal, um <code>st.toast</code> (notificação flutuante) é disparado para informar o usuário sem quebrar o layout.</p>
+<h3 id="verificacao-de-vitoria">Verificação de Vitória</h3>
+<p>A cada movimento bem-sucedido para a <strong>Torre C</strong>, o código verifica se o tamanho da lista é igual ao número de discos inicial. Em caso positivo:
+1. A flag <code>venceu</code> torna-se <code>True</code>.
+2. O recorde é atualizado se o número de movimentos atual for menor que o salvo anteriormente.
+3. Disparam-se os balões comemorativos.</p>
+<hr />
+<h2 id="estilizacao-e-estabilidade_1">🎨 Estilização e Estabilidade</h2>
+<p>Para resolver problemas de "pulos" na tela (layout shift), foram aplicadas as seguintes técnicas de CSS:</p>
+<ul>
+<li><strong>Altura Mínima Fixa</strong>: O container das torres possui <code>min-height: 500px</code>, garantindo que os botões de ação fiquem sempre na mesma linha, independente da quantidade de discos em cada torre.</li>
+<li><strong>Alinhamento na Base</strong>: Utilização de <code>justify-content: flex-end</code> para que a pilha cresça de baixo para cima.</li>
+<li><strong>Preenchimento de Espaço</strong>: Um loop gera <code>&amp;nbsp;</code> (espaços vazios) para as posições não ocupadas por discos, mantendo a integridade visual.</li>
+</ul>
+<hr /></div>
             </div>
         </div>
 
